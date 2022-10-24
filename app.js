@@ -31,6 +31,5 @@ let pari_dispari //= prompt('Scegli un numero Pari o Dispari')
 //inserisce un numero da 1 a 5.
 let numeroUtente //= prompt('Scegli un numero da 1 a 5')
 //Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-let numeroAi;
-numeroAi = Math.floor((Math.random()*5)+1);
-console.log(numeroAi);
+let numeroAi = Math.floor((Math.random()*5)+1);
+
