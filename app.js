@@ -1,3 +1,3 @@
 //Palidroma
-const parolaInserita = "ciao";
-const parolaGirata = giraParola(parolaInserita)
+const parolaInserita = "onorarono"
+const parolaGirata = giraParola(parolaInserita.trim())
