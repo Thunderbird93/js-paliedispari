@@ -1,5 +1,5 @@
 //Palidroma
-const parolaInserita = prompt('')
+const parolaInserita = // prompt('')
 const parolaGirata = giraParola(parolaInserita.trim())
 const risultato = checkPalindorma(parolaInserita.trim(), parolaGirata)
 console.log(risultato);
@@ -16,3 +16,5 @@ function checkPalindorma(parolaInserita, parolaGirata){
   if(parolaInserita.toLowerCase() === parolaGirata.toLowerCase()) return 'PALINDOMA';
   return 'NON PALINDROMA'
 }
+
+//Pari e Dispari
