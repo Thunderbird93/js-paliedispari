@@ -27,7 +27,7 @@ Dichiariamo chi ha vinto.
 */
 
 //L’utente sceglie pari o dispari
-let pari_dispari; //= prompt('Scegli un numero Pari o Dispari')
+let pari_dispari = prompt('Scegli un numero Pari o Dispari')
 //inserisce un numero da 1 a 5.
 let numeroUtente = parseInt (prompt('Scegli un numero da 1 a 5'))
 //Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
@@ -37,15 +37,30 @@ document.getElementById("numeroUtente").innerHTML = numeroUtente;
 //Sommiamo i due numeri
 let somma = numeroAi + numeroUtente
 
+
 let risultato 
-
-
+//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 if (somma % 2 === 0){
     risultato = "Vince il Pari!"
 } else {
     risultato = "Vince il Dispari!"
 }
+
 document.getElementById("risultato").innerHTML = risultato
+let bet = pari_dispari
+document.getElementById("bet").innerHTML = bet
 
-//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+let message = document.getElementById("message").innerHTML
 
+
+if (bet === "pari" && risultato === "Vince il Pari!"){
+    message = "Hai Vinto!"
+} 
+else if (bet === "dispari" && risultato === "Vince il Dispari!"){
+    message = "Hai Vinto!"
+} 
+else {
+    message = "Ritenta, sarai più fortunato"
+}
+
+alert(message)
